@@ -2,13 +2,12 @@ import React from "react";
 
 const Footer = props => {
   return (
-    <footer>
+    <footer className="footer">
       <ul>
-        {props.info.map(element => (
-          <li>element</li>
-        ))}
+        <li>{props.email}</li>
+        <li>{props.address}</li>
+        <li>{props.phone}</li>
       </ul>
-      <div>Footer</div>
     </footer>
   );
 };
