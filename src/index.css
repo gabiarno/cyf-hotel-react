@@ -34,3 +34,7 @@ body {
   background-color: white;
   color: black;
 }
+
+ul {
+  list-style: none;
+}

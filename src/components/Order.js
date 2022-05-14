@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import RestaurantButton from "./RestaurantButton";
 
 const Order = props => {
+  const [items, setItem] = useState(0);
+  const orderOneItem = () => {
+    setItem(items + 1);
+  };
   return (
     <li>
-      {props.item}: {props.totalOrders}{" "}
-      <RestaurantButton handlClick={props.orderOne} />
+      {props.item}: {items} <RestaurantButton handlClick={orderOneItem} />
     </li>
   );
 };
