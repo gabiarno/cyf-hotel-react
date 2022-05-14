@@ -15,7 +15,7 @@ const SearchResultsRow = props => {
       <td>{props.row.roomId}</td>
       <td>{props.row.checkInDate}</td>
       <td>{props.row.checkOutDate}</td>
-      <td>{nightsn}</td>
+      <td>{nights}</td>
     </tr>
   );
 };
