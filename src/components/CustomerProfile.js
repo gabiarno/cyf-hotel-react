@@ -15,9 +15,6 @@ const CustomerProfile = props => {
     <div>
       <h3>Customer Profile:</h3>
 
-      <button onClick={props.onClose} className="btn btn-primary">
-        Close profile
-      </button>
       <table class="table">
         <thead>
           <th scope="col">Id</th>

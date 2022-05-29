@@ -24,10 +24,16 @@ const Bookings = () => {
     fetch(`https://cyf-react.glitch.me/`)
       .then(res => res.json())
       .then(data => {
-        console.log("data", data);
-        setBookings(data);
-        setLoading(false);
-      });
+        if (data.error) {
+          alert(data.error);
+          console.log(data.error);
+        } else {
+          console.log("data", data);
+          setBookings(data);
+          setLoading(false);
+        }
+      })
+      .catch(error => console.log(error));
   }, []);
 
   return (
