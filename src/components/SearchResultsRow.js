@@ -25,6 +25,16 @@ const SearchResultsRow = props => {
       <td>{props.row.checkInDate}</td>
       <td>{props.row.checkOutDate}</td>
       <td>{nights}</td>
+      <td>
+        <button
+          onClick={() => {
+            props.setCustomerId(props.row.id);
+          }}
+          className="btn btn-primary"
+        >
+          Show Profile
+        </button>
+      </td>
     </tr>
   );
 };
